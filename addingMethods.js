@@ -25,3 +25,7 @@ function carSimulator(marka, model, kilometre, fiyat) {
   
     return car;
   }
+
+
+
+
