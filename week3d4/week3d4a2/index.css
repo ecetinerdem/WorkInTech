@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 750px;
+    font-family: 'Montserrat';
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* header */
+  header {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  header nav button {
+    padding: 15px;
+    font-size: 16px;
+  }
+  
+  .menu-items {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+  }
+  
+  .social-items {
+    display: flex;
+    gap: 30px;
+    font-size: 30px;
+  }
+  
+  /* gallery */
+  .gallery-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+  }
+  
+  .gallery-section img {
+    width: 18%;
+    aspect-ratio: 1/3;
+  }
+  
+  footer {
+    margin-top: 50px;
+    height: 80px;
+    background: gray;
+  }
+  
+  /* css-1 responsive tasarım için maksimum genişlik 500px için media query yazalım.
+  css-2 body tag'ini kullanarak sayfanın 300px'den küçük olmasını engelleyelim.
+  css-3 menu-items class'ında navigasyon linklerinin sütun şeklinde alt alta dizilmesini, genişliklerinin eşit olması için esnemesini(stretch) ve aralarındaki boşluğun yok olmasını sağlayalım.
+  
+  gallery-section'daki resimlerin mobil tasarımdaki gibi her satırda 2 tane ve sadece ilk 4 item'ın görünür olması isteniyor.
+  css-4 .gallery-section'daki resimlerin her satırda 2 tane olması için genişliğini %45 yapalım
+  css-5 .gallery-section'daki resimlerden ilk 4'ünün görünür olması için diğerlerini gizleyelim.
+  */
+  
+  @media (max-width: 500px) {
+    body {
+      min-width: 300px;
+    }
+    .menu-items {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  
+    .gallery-section {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .gallery-section img {
+      width: 45%;
+    }
+  
+    .gallery-section img:nth-child(n + 5) {
+      display: none;
+    }
+  }
+  
