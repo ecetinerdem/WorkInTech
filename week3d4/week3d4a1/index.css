@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 750px;
+    font-family: 'Montserrat';
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover,
+  .social-items > i:hover {
+    color: blue;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
+  header {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  header nav button {
+    padding: 15px;
+    font-size: 16px;
+  }
+  
+  .menu-items {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+  }
+  
+  .social-items {
+    display: flex;
+    gap: 30px;
+    font-size: 30px;
+  }
+  
+  .main-container {
+    width: 80%;
+    margin: 50px auto;
+    aspect-ratio: 4/3;
+    background: url('https://res.cloudinary.com/highereducation/images/w_1024,h_683,c_scale/f_auto,q_auto/v1659634209/BestColleges.com/BC_Bootcamps_Resources_How-to-Decide-If-Coding-is-Right-for-Me_3.7.22_FTR_24718e35be/BC_Bootcamps_Resources_How-to-Decide-If-Coding-is-Right-for-Me_3.7.22_FTR-1024x683.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    padding: 50px;
+    max-width: 750px;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff;
+  }
+  
+  /* css-1 responsive tasarım için maksimum genişlik 500px için media query yazalım.
+  css-2 body tag'ini kullanarak sayfanın 300px'den küçük olmasını engelleyelim.
+  css-3 menu-items class'ında navigasyon linklerinin sütun şeklinde alt alta dizilmesini, genişliklerinin eşit olması için esnemesini(stretch) ve aralarındaki boşluğun yok olmasını sağlayalım.
+  css-4 main-container class'ında alanın ekranın sağına ve soluna tam oturması için genişliğini ayarlayalım. font'un büyüklüğünü ana font büyüküğünün 1.3 katı yapalım, iç dolgu padding'i sıfırlayalım.
+  css-5 main-content class'ında iç dolguyu ana font büyüklüğünün 1.5 katı yapalım.
+  css-6 menu-items içindeki anchor tag(a)'ler için iç dolguyu ana font'a göre 1.1 kat, kenarlığını 1px, düz çizgi, ve siyah yaoalım. yazıyı tasarımdaki gibi ortalayalım.
+  */
+  
+  @media (max-width: 500px) {
+    body {
+      min-width: 300px;
+    }
+    .menu-items {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+    .main-container {
+      width: 100%;
+      font-size: 1.3rem;
+      padding: 0;
+    }
+    .main-content {
+      padding: 1.5rem;
+    }
+    .menu-items a {
+      padding: 1.1rem;
+      border: 1px solid black;
+      text-align: center;
+    }
+  }
+  
