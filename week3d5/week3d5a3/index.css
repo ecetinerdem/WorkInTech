@@ -1,0 +1,277 @@
+h1 {
+    font-size: 4rem;
+    color: white;
+  }
+  
+  h2 {
+    font-size: 3rem;
+    padding: 5rem;
+  }
+  
+  h3,
+  a {
+    font-size: 2.5rem;
+  }
+  
+  h4 {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+  
+  body {
+    min-width: 750px;
+    color: white;
+  }
+  
+  a {
+    color: white;
+  }
+  
+  /* header section */
+  header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://i.ibb.co/1rkHMzq/menu-header-md.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+  }
+  .header-content {
+    background-color: #00000083;
+    padding: 3vw;
+  }
+  
+  /* css-1 nav içindeki i'ler için font-size ana font'un 3 katı olsun.*/
+  nav i {
+    margin: 2vw;
+    font-size: 3rem;
+  }
+  
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  /* css-2 nav-items class'ı için flex özellikleri ile yatayda ortalayalım ve boşluk ana font'un 2 katı kadar olsun.*/
+  .nav-items {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  /* spacer */
+  .spacer {
+    width: 100%;
+    height: 4vh;
+    background-color: rgb(0, 4, 17);
+  }
+  .spacer-sm {
+    width: 100%;
+    height: 2vh;
+    background-color: rgb(0, 4, 17);
+  }
+  
+  /* menu */
+  
+  .menu-section {
+    width: 100%;
+    height: auto;
+    background-image: url('https://i.ibb.co/XbmMVvf/staff-bartender.jpg');
+    background-color: rgb(0, 4, 17);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .menu-container {
+    background-color: rgb(0, 4, 17, 0.8);
+    text-align: center;
+    padding-bottom: 25rem;
+  }
+  
+  /* css-3 menu-content class'ı için flex özellikleri ile yatayda ortalayalım, satıra sığmayanlar aşağı kaysın(wrap), boşluk ana font'un 6 katı kadar olsun ve metinleri sola yaslayalım.*/
+  .menu-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+    text-align: left;
+  }
+  
+  /* css-4 menu-card class'ı için flex özellikleri ile itemları sütun olarak gösterelim , genişlik %35 olsun, .*/
+  .menu-card {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+  }
+  
+  /* css-5 menu-item class'ı için flex özellikleri ile itemları aralıkları eşit olaak şekilde dağıtalım, satıra sığmayanları aşağı kaydıralım(wrap) ve dış boşluğu yukarı&aşğı yönünde ana font'un 1,5 katı, sağ&solda 0 yapalım .*/
+  
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+  }
+  
+  .menu-item p {
+    width: 100%;
+  }
+  
+  /* footer section */
+  footer {
+    width: 100%;
+    padding: 2.5vh;
+    font-size: 3rem;
+    background-color: rgb(0, 4, 17);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  footer nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    gap: 2rem;
+  }
+  footer form {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+  footer p {
+    text-align: center;
+  }
+  
+  footer a {
+    font-size: 2.2rem;
+  }
+  
+  footer input {
+    padding: 5px;
+    width: 65%;
+    font-size: 2rem;
+  }
+  
+  footer .button {
+    padding: 4px 20px;
+    display: inline-block;
+    background-color: rgb(226, 226, 226);
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  footer div {
+    color: black;
+  }
+  
+  /* mobile media query */
+  
+  /* css-6 500px'e kadar olan ekran genişliği için media query kuralını ayarlayalım.*/
+  @media (max-width: 500px) {
+    /* css-7 body'de minimum width 350px yapalım, metinleri ortalayalım ve yazı rengini siyah yapalım.*/
+    body {
+      min-width: 350px;
+      text-align: center;
+      color: black;
+    }
+  
+    h1 {
+      font-size: 6rem;
+    }
+  
+    /* css-8 h2'nin sadece altına bir border ekleyelim. 20px olsun, düz çizgi olsun ve rengi siyah olsun.*/
+  
+    h2 {
+      font-size: 5rem;
+      padding-bottom: 2rem;
+      border-bottom: 20px solid black;
+    }
+  
+    /* css-9 h3'e border ekleyelim. 10px olsun düz çizgi olsun ve rengi siyah olsun.*/
+    h3 {
+      font-size: 4.5rem;
+      text-align: center;
+      padding: 2rem;
+      border: 10px solid black;
+    }
+  
+    h4,
+    a {
+      font-size: 3.5rem;
+      text-align: center;
+      width: 100%;
+    }
+  
+    p {
+      font-size: 3rem;
+      text-align: center;
+    }
+  
+    /* header section */
+    /* css-10 nav-items class'ı için flex yönünü sütun yapalım ve ters eksende ortalayalım, aralıkları 1rem yapalım, dış boşluğu dikeyde ana font'un 2 katı ve yatayda 0 yapalım..*/
+  
+    .nav-items {
+      flex-direction: column;
+      align-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+  
+    /* menu */
+    /* css-11 menu-section'ın arkaplanını mobilde resim yerine açık renkli yapalım: rgb(225, 239, 230) */
+    .menu-section {
+      background: rgb(225, 239, 230);
+    }
+  
+    /* css-12 menu-container'da arkaplanda var olan gölgeyi iptal etmek için arkaplanı yok edelim.*/
+  
+    .menu-container {
+      padding: 10vw;
+      background: none;
+    }
+  
+    .menu-item {
+      gap: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 10px solid black;
+    }
+  
+    /* css-13 menu-item'ın en son element olduğunda border ayarı unset olsun.*/
+  
+    .menu-item:last-child {
+      border: unset;
+    }
+  
+    /* css-14 menu-card'ın dış boşluğunu her yönde 10% yapalım, genişliğini 90% yapalım*/
+  
+    .menu-card {
+      margin: 10%;
+      width: 90%;
+    }
+    /* footer section */
+    footer {
+      height: auto;
+      padding-top: 2.5vh;
+      font-size: 2rem;
+      color: white;
+    }
+  
+    footer h3 {
+      border: unset;
+      font-size: 3rem;
+    }
+  
+    footer p {
+      font-size: 2rem;
+    }
+  }
+  
