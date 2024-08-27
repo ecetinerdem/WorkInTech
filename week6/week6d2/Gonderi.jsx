@@ -1,0 +1,29 @@
+import React from 'react';
+import Yorumlar from '../Yorumlar/Yorumlar';
+import BegenBolumu from './BegenBolumu';
+import GonderiBasligi from './GonderiBasligi';
+
+const Gonderi = ({ gonderi, gonderiyiBegen }) => {
+  return (
+    <div className="post-border">
+      <GonderiBasligi
+        username={gonderi.username}
+        thumbnailUrl={gonderi.thumbnailUrl}
+      />
+      <div className="post-image-wrapper">
+        <img
+          alt="post thumbnail"
+          className="post-image"
+          src={gonderi.imageUrl}
+        />
+      </div>
+      <BegenBolumu
+        begeniSayisi={gonderi.likes}
+        gonderiyiBegen={() => gonderiyiBegen(gonderi.id)}
+      />
+      <Yorumlar yorumlar={gonderi.comments} />
+    </div>
+  );
+};
+
+export default Gonderi;
