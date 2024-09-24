@@ -1,0 +1,114 @@
+{
+  "numTotalTestSuites": 1,
+  "numPassedTestSuites": 1,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 9,
+  "numPassedTests": 9,
+  "numFailedTests": 0,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "startTime": 1727174207260,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            ""
+          ],
+          "fullName": " Favorileri Gizle butonu tıklanınca favori panelini gizliyor.",
+          "status": "passed",
+          "title": "Favorileri Gizle butonu tıklanınca favori panelini gizliyor.",
+          "duration": 132,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            ""
+          ],
+          "fullName": " Favorileri Gizle butonu tıklandıkça, metni Favorileri göster ve Favorileri gizle arasında değişiyor.",
+          "status": "passed",
+          "title": "Favorileri Gizle butonu tıklandıkça, metni Favorileri göster ve Favorileri gizle arasında değişiyor.",
+          "duration": 69,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            ""
+          ],
+          "fullName": " Tüm filmler ekranda gösteriliyor",
+          "status": "passed",
+          "title": "Tüm filmler ekranda gösteriliyor",
+          "duration": 27,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            ""
+          ],
+          "fullName": " Detay butonu film detaylarını gösteriyor.",
+          "status": "passed",
+          "title": "Detay butonu film detaylarını gösteriyor.",
+          "duration": 74,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            ""
+          ],
+          "fullName": " Film detayları sayfasında Favorilere Ekle butonu filmi favori listesine ekliyor",
+          "status": "passed",
+          "title": "Film detayları sayfasında Favorilere Ekle butonu filmi favori listesine ekliyor",
+          "duration": 260,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            ""
+          ],
+          "fullName": " Film detayları sayfasında Favorilere Ekle butonu filmi favori listesine 2. kez eklemiyor",
+          "status": "passed",
+          "title": "Film detayları sayfasında Favorilere Ekle butonu filmi favori listesine 2. kez eklemiyor",
+          "duration": 60,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            ""
+          ],
+          "fullName": " sil butonu filmi siliyor ve tüm filmler sayfası açılıyor.",
+          "status": "passed",
+          "title": "sil butonu filmi siliyor ve tüm filmler sayfası açılıyor.",
+          "duration": 174,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            ""
+          ],
+          "fullName": " Yeni film ekleniyor ve tüm filmler sayfası açılıyor.",
+          "status": "passed",
+          "title": "Yeni film ekleniyor ve tüm filmler sayfası açılıyor.",
+          "duration": 1245,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            ""
+          ],
+          "fullName": " AddMovieForm componentinde preventDefault kullanılmış",
+          "status": "passed",
+          "title": "AddMovieForm componentinde preventDefault kullanılmış",
+          "duration": 11,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1727210601129,
+      "endTime": 1727210603182,
+      "status": "passed",
+      "message": "",
+      "name": "/home/projects/vitejs-vite-zvrcsr/src/__tests__/index.test.jsx"
+    }
+  ]
+}
